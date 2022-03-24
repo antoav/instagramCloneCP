@@ -12,6 +12,7 @@ import AlamofireImage
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
 
+
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [PFObject]()
@@ -52,7 +53,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if user.username != nil {
             
-            cell.userNameLabel.text = user.username
+            cell.usernameLabel.text = user.username
         }
         cell.captionLabel.text = (post["caption"] as! String)
         

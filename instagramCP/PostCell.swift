@@ -2,18 +2,15 @@
 //  PostCell.swift
 //  instagramCP
 //
-//  Created by Antonella on 3/23/22.
+//  Created by Antonella on 3/24/22.
 //
 
 import UIKit
 
 class PostCell: UITableViewCell {
     @IBOutlet weak var photoView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
-    
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
