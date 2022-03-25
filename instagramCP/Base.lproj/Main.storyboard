@@ -124,14 +124,14 @@
                                                         <constraint firstAttribute="width" secondItem="sz2-a7-mSS" secondAttribute="height" multiplier="398:461" id="KnI-HD-dzH"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antonella" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4m-V9-utq">
-                                                    <rect key="frame" x="8" y="477" width="282" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Antonella" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4m-V9-utq">
+                                                    <rect key="frame" x="8" y="457" width="282" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="I love sunsets!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjN-vp-C9a">
-                                                    <rect key="frame" x="298" y="477" width="108" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="I love sunsets!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjN-vp-C9a">
+                                                    <rect key="frame" x="298" y="477" width="108" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -144,9 +144,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="BjN-vp-C9a" secondAttribute="trailing" constant="8" id="YY0-V1-Ef4"/>
                                                 <constraint firstItem="sz2-a7-mSS" firstAttribute="top" secondItem="k43-fF-IqW" secondAttribute="top" constant="8" id="ZT3-W9-53w"/>
                                                 <constraint firstItem="S4m-V9-utq" firstAttribute="leading" secondItem="k43-fF-IqW" secondAttribute="leading" constant="8" id="hOY-N9-LLZ"/>
+                                                <constraint firstItem="BjN-vp-C9a" firstAttribute="top" secondItem="sz2-a7-mSS" secondAttribute="bottom" constant="8" id="n71-rZ-rdQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="BjN-vp-C9a" secondAttribute="bottom" constant="8" id="rW6-rN-1np"/>
                                                 <constraint firstItem="sz2-a7-mSS" firstAttribute="leading" secondItem="k43-fF-IqW" secondAttribute="leading" constant="8" id="sne-BM-yBt"/>
-                                                <constraint firstItem="BjN-vp-C9a" firstAttribute="leading" secondItem="S4m-V9-utq" secondAttribute="trailing" constant="8" id="uZW-ph-FLi"/>
-                                                <constraint firstItem="BjN-vp-C9a" firstAttribute="top" secondItem="sz2-a7-mSS" secondAttribute="bottom" constant="8" id="zUv-XY-6Te"/>
+                                                <constraint firstAttribute="trailing" secondItem="BjN-vp-C9a" secondAttribute="trailing" constant="8" id="wVl-yl-uaj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -184,13 +185,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adV-Pi-muW">
-                                <rect key="frame" x="26" y="478" width="363" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6y-t3-txu">
-                                <rect key="frame" x="26" y="529" width="363" height="31"/>
+                                <rect key="frame" x="26" y="508" width="363" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -203,25 +199,36 @@
                                     <action selector="onPost:" destination="EAH-M1-w12" eventType="touchUpInside" id="iZf-Jf-E4l"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJ1-fE-zMB">
-                                <rect key="frame" x="8" y="44" width="398" height="408"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="TJ1-fE-zMB">
+                                <rect key="frame" x="8" y="52" width="398" height="398"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="Fbb-l9-ExR"/>
+                                    <constraint firstAttribute="width" constant="398" id="GTN-LE-pD7"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xX7-1R-1lL" appends="YES" id="svR-if-eKZ"/>
                                 </connections>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adV-Pi-muW">
+                                <rect key="frame" x="8" y="458" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s1N-jJ-op3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="s1N-jJ-op3" firstAttribute="trailing" secondItem="adV-Pi-muW" secondAttribute="trailing" constant="8" id="0Is-8R-BCX"/>
                             <constraint firstItem="TJ1-fE-zMB" firstAttribute="top" secondItem="s1N-jJ-op3" secondAttribute="top" constant="8" id="1Np-Ub-TyT"/>
+                            <constraint firstItem="adV-Pi-muW" firstAttribute="leading" secondItem="s1N-jJ-op3" secondAttribute="leading" constant="8" id="7BR-iN-34G"/>
                             <constraint firstItem="TJ1-fE-zMB" firstAttribute="leading" secondItem="s1N-jJ-op3" secondAttribute="leading" constant="8" id="Es1-P5-5jI"/>
                             <constraint firstItem="adV-Pi-muW" firstAttribute="top" secondItem="TJ1-fE-zMB" secondAttribute="bottom" constant="8" id="IUu-tY-lkI"/>
                             <constraint firstItem="s1N-jJ-op3" firstAttribute="trailing" secondItem="TJ1-fE-zMB" secondAttribute="trailing" constant="8" id="Vmq-3H-opI"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="TJ1-fE-zMB" id="2Ek-ua-z1j"/>
                         <outlet property="commentField" destination="adV-Pi-muW" id="6tq-3S-ZIg"/>
                         <outlet property="imageView" destination="TJ1-fE-zMB" id="LLS-Xy-PSE"/>
                     </connections>
@@ -256,8 +263,12 @@
     </scenes>
     <resources>
         <image name="1522452762Instagram-logo-png-text" width="2000" height="714"/>
+        <image name="cameraPlaceholder" width="736" height="736"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
